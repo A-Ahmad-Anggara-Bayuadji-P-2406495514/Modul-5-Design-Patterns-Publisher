@@ -4,7 +4,7 @@ use crate::model::subscriber::Subscriber;
 
 // Singleton of Database
 lazy_static! {
-    pub static ref SUBSCRIBERS: DashMap<String, Subscriber> = DashMap::new();
+    pub static ref SUBSCRIBERS: Dashmap<String, DashMap<String, Subscriber>> = DashMap::new();
 }
 
 pub struct SubscriberRepository;
