@@ -27,6 +27,6 @@ impl NotificationService {
                 String::from("Subscriber not found.")
             ));
         }
-    return Ok(result.unwrap());
+        return Ok(result.unwrap());
     }
 }
